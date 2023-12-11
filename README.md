@@ -1,0 +1,1 @@
+# infer_kandinsky_2_image_mixing
