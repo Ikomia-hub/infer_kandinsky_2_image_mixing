@@ -16,7 +16,7 @@ class InferKandinsky2ImageMixingParam(core.CWorkflowTaskParam):
 
     def __init__(self):
         core.CWorkflowTaskParam.__init__(self)
-        self.prompt = "A cat"
+        self.prompt = "a cat"
         self.prior_guidance_scale = 4.0
         self.guidance_scale = 1.0
         self.negative_prompt = ""
