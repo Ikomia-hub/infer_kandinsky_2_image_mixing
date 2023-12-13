@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="images/einstein.png" alt="Algorithm icon">
+  <img src="images/einstein.jpg" alt="Algorithm icon">
   <h1 align="center">infer_kandinsky_2_image_mixing</h1>
 </div>
 <br />
@@ -61,7 +61,7 @@ wf.set_image_input(
 algo = wf.add_task(name = "infer_kandinsky_2_image_mixing", auto_connect=True)
 
 algo.set_parameters({
-    'prompt': 'cat',
+    'prompt': 'a cat',
     'negative_prompt': '',
     'prior_num_inference_steps': '25',
     'prior_guidance_scale': '4.0',
@@ -90,7 +90,7 @@ Ikomia Studio offers a friendly UI with the same features as the API.
 
 ## :pencil: Set algorithm parameters
 
-- **prompt** (str) - default '' : Text prompt to guide the image generation .
+- **prompt** (str) - default 'a cat' : Text prompt to guide the image generation .
 - **negative_prompt** (str, *optional*) - default '': The prompt not to guide the image generation. Ignored when not using guidance (i.e., ignored if `guidance_scale` is less than `1`).
 - **prior_num_inference_steps** (int) - default '25': Number of denoising steps of the prior model (CLIP).
 - **prior_guidance_scale** (float) - default '4.0':  Higher guidance scale encourages to generate images that are closely linked to the text prompt, usually at the expense of lower image quality. (minimum: 1; maximum: 20).
@@ -124,7 +124,7 @@ wf.set_image_input(
 algo = wf.add_task(name = "infer_kandinsky_2_image_mixing", auto_connect=True)
 
 algo.set_parameters({
-    'prompt': 'cat',
+    'prompt': 'a cat',
     'negative_prompt': '',
     'prior_num_inference_steps': '25',
     'prior_guidance_scale': '4.0',
