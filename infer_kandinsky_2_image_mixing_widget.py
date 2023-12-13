@@ -84,6 +84,13 @@ class InferKandinsky2ImageMixingWidget(core.CWorkflowTaskWidget):
                                                 self.parameters.width,
                                                 min=128, step=1
                                                 )
+        # Seed
+        self.spin_seed = pyqtutils.append_spin(
+                                            self.grid_layout,
+                                            "Seed",
+                                            self.parameters.seed,
+                                            min=-1, step=1
+                                            )
 
        # Set widget layout
         self.set_layout(layout_ptr)
@@ -101,6 +108,7 @@ class InferKandinsky2ImageMixingWidget(core.CWorkflowTaskWidget):
         self.parameters.prior_guidance_scale = self.spin_prior_guidance_scale.value()
         self.parameters.width = self.spin_width.value()
         self.parameters.height = self.spin_height.value()
+        self.parameters.seed = self.spin_seed.value()
         self.parameters.negative_prompt = self.edit_negative_prompt.text()
 
 
