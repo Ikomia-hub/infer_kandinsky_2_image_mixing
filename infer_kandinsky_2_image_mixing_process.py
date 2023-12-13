@@ -55,7 +55,6 @@ class InferKandinsky2ImageMixingParam(core.CWorkflowTaskParam):
         param_map["width"] = str(self.width)
         param_map["weights"] = str(self.weights)
         param_map["num_inference_steps"] = str(self.num_inference_steps)
-        param_map["num_inference_steps"] = str(self.num_inference_steps)
         param_map["prior_num_inference_steps"] = str(self.prior_num_inference_steps)
         param_map["seed"] = str(self.seed)
 
